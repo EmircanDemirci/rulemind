@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 
-def run_streamlit_sigma_ui(mongo_url=os.getenv("MONGO_URI"), db_name=os.getenv("DB_NAME"), collection_name=os.getenv("COLLECTION_NAME")):
+def run_streamlit_sigma_ui(mongo_url="mongodb+srv://emircandemirci:m#n#m#n1135@cluster0.gntn5zk.mongodb.net/", db_name="sigmaDB", collection_name="rules"):
     st.set_page_config(page_title="Similarity Check", layout="wide")
     st.title("Similarity Check")
 
